@@ -37,5 +37,5 @@ data:
       {{- end }}
       dataLocality: {{ .Values.persistence.defaultDataLocality | quote }}
       {{- if .Values.persistence.defaultNodeSelector.enable }}
-      nodeSelector: '{{ .Values.persistence.defaultNodeSelector }}'
+      nodeSelector: '{{ .Values.persistence.defaultNodeSelector.name }}'
       {{- end }}
